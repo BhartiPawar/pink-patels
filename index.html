@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pink Petals</title>
+    <!----------------------Favicon - Link---------------------------------->
+    <link rel="icon" type="image/x-icon" href="img/favicon-16x16.png" />
+
+    <!----------------------Bootstrap - CDN----------------------------------------------->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <!----------------------Owl - CDN----------------------------------------------->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!----------------------Font - Awasome - CDN---------------------------------->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!----------------------------AOS - CDN----------------------------------->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!----------------------Custom - CSS----------------------------------------------->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="bg-black text-light">
+    <!-------------------------Header-Start--------------------------------------------->
+
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand text-dark fw-semibold" href="#"
+            >Pink<span class="change-Color">Petals</span></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Categories
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="shoe.html">Shoes</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                     <li>
+                    <a class="dropdown-item" href="perfume.html">Perfume</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#" aria-disabled="false">Sunglasses</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <!-- <li><a class="dropdown-item" href="#">Heels</a></li> -->
+                  <!-- <li><hr class="dropdown-divider" /></li> -->
+               
+                  <li><a class="dropdown-item" href="bag.html">Bags</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2 border-black"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-dark" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div
+        id="carouselExampleAutoplaying"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="img/slide2.jpg"
+              class="d-block w-100 object-fit-cover"
+              style="height: 90vh"
+              alt="girls product"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="img/slide1.jpg"
+              class="d-block w-100 object-fit-cover"
+              style="height: 90vh"
+              alt="women dress"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="img/slide3.jpg"
+              class="d-block w-100 object-fit-cover"
+              style="height: 90vh"
+              alt="makeup"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="img/slide4.jpg"
+              class="d-block w-100 object-fit-cover"
+              style="height: 90vh"
+              alt="heels"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="img/slide5.jpg"
+              class="d-block w-100 object-fit-cover"
+              style="height: 90vh"
+              alt="rings"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </header>
+    <!-------------------------Header-End--------------------------------------------->
+
+    <!-------------------------AboutUs - Start--------------------------------------------->
+    <section class="about">
+      <div class="section-heading">
+        <h1 class="mb-5 text-center" style="letter-spacing: 3px">About Us</h1>
+      </div>
+
+      <div
+        class="card mb-5 w-50 mx-auto"
+        data-aos="zoom-in-up"
+        data-aos-duration="1000"
+      >
+        <div class="row g-0">
+          <div class="col-md-6">
+            <img
+              src="img/about.jpg"
+              class="img-fluid rounded-start w-100"
+              alt="pink petal"
+            />
+          </div>
+          <div class="col-md-6">
+            <div class="card-body">
+              <h5 class="card-title fw-bolder text-center">About Us</h5>
+              <p class="card-text lh-lg">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Ad aspernatur nisi, at quidem totam necessitatibus quam, nam
+                explicabo illum sapiente ex iste rem neque dolorum placeat
+                numquam corrupti! Veniam, eum?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="banner d-flex justify-content-center align-items-center flex-column"
+      >
+        <h1 class="mb3">Get 30% OFF!</h1>
+        <p class="mb3">Get 30% OFF Discount on your First Order.</p>
+        <div class="btn btn-outline-light my-3 px-5">Shop Now</div>
+      </div>
+    </section>
+
+    <!-------------------------AboutUs - End--------------------------------------------->
+
+    <!-------------------------Features - Start--------------------------------------------->
+    <section class="features">
+      <div class="section-heading">
+        <h1 class="mb-5 text-center" style="letter-spacing: 3px">
+          Featured Products
+        </h1>
+      </div>
+
+      <div class="owl-carousel owl-theme w-100 mx-auto">
+        <div class="item">
+          <div class="card" style="width: 18rem">
+            <img
+              src="img/bag1.jpg"
+              class="card-img-top object-fit-cover"
+              alt="bag image"
+              style="height: 45vh"
+            />
+            <div class="card-body">
+              <p class="card-text d-flex justify-content-between">
+                <span>Satchel Bag</span>
+                <span>$245</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="card" style="width: 18rem">
+            <img
+              src="img/earing1.jpg"
+              class="card-img-top object-fit-cover"
+              alt="bag image"
+              style="height: 45vh"
+            />
+            <div class="card-body">
+              <p class="card-text d-flex justify-content-between">
+                <span>Stud Earring</span>
+                <span>$45</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="card" style="width: 18rem">
+            <img
+              src="img/sandel1.jpg"
+              class="card-img-top object-fit-cover"
+              alt="bag image"
+              style="height: 45vh"
+            />
+            <div class="card-body">
+              <p class="card-text d-flex justify-content-between">
+                <span>Tapered Heel</span>
+                <span>$450</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="card" style="width: 18rem">
+            <img
+              src="img/shoes2.jpg"
+              class="card-img-top object-fit-cover"
+              alt="bag image"
+              style="height: 45vh"
+            />
+            <div class="card-body">
+              <p class="card-text d-flex justify-content-between">
+                <span>Derby Shoes</span>
+                <span>$500</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="card" style="width: 18rem">
+            <img
+              src="img/sunglass1.jpg"
+              class="card-img-top object-fit-cover"
+              alt="bag image"
+              style="height: 45vh"
+            />
+            <div class="card-body">
+              <p class="card-text d-flex justify-content-between">
+                <span>Wayfarer Glass</span>
+                <span>$50</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="card" style="width: 18rem">
+            <img
+              src="img/cloth1.jpg"
+              class="card-img-top object-fit-cover"
+              alt="bag image"
+              style="height: 45vh"
+            />
+            <div class="card-body">
+              <p class="card-text d-flex justify-content-between">
+                <span>Winter Wear</span>
+                <span>$110</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-------------------------Features - End--------------------------------------------->
+
+    <!--------------------------MakeUp - start------------------------------------------->
+    <section class="makeUp">
+      <div class="section-heading">
+        <h1 class="mb-5 text-center" style="letter-spacing: 3px">
+          Glow Up Studio
+        </h1>
+      </div>
+
+      <div class="d-flex justify-content-evenly flex-wrap">
+        <div class="card mb-4 makeupCart" style="width: 18rem">
+          <div class="img-wrapper">
+            <img src="img/makeup1.jpg" class="card-img-top" alt="lip gloss" />
+          </div>
+          <div class="card-body d-flex justify-content-between">
+            <h5 class="card-title">Lip Gloss</h5>
+            <p class="card-text">$350</p>
+          </div>
+          <a href="#" class="btn btn-primary addToCart">Add to Cart</a>
+        </div>
+
+        <div class="card mb-4 makeupCart" style="width: 18rem">
+          <div class="img-wrapper">
+            <img src="img/makeup2.jpg" class="card-img-top" alt="Eye Linear" />
+          </div>
+          <div class="card-body d-flex justify-content-between">
+            <h5 class="card-title">Eye Linear</h5>
+            <p class="card-text">$150</p>
+          </div>
+          <a href="#" class="btn btn-primary addToCart">Add to Cart</a>
+        </div>
+
+        <div class="card mb-4 makeupCart" style="width: 18rem">
+          <div class="img-wrapper">
+            <img src="img/makeup3.jpg" class="card-img-top" alt="shadow" />
+          </div>
+          <div class="card-body d-flex justify-content-between">
+            <h5 class="card-title">Shimmer</h5>
+            <p class="card-text">$270</p>
+          </div>
+          <a href="#" class="btn btn-primary addToCart">Add to Cart</a>
+        </div>
+
+        <div class="card mb-4 makeupCart" style="width: 18rem">
+          <div class="img-wrapper">
+            <img src="img/makep4.jpg" class="card-img-top" alt="lipstick" />
+          </div>
+          <div class="card-body d-flex justify-content-between">
+            <h5 class="card-title">Lipstick</h5>
+            <p class="card-text">$190</p>
+          </div>
+          <a href="#" class="btn btn-primary addToCart">Add to Cart</a>
+        </div>
+      </div>
+    </section>
+
+    <!---------------------------MakeUp - End--------------------------------------------->
+
+    <!-------------------------New - Arrivel - Start-------------------------------------->
+
+    <section class="new-arrivel">
+      <div class="section-heading">
+        <h1 class="mb-5 text-center" style="letter-spacing: 3px">
+          New Arrival
+        </h1>
+      </div>
+
+      <div class="container-fluid text-center">
+        <div class="row w-100 mx-auto">
+          <div
+            class="col-md-3 mb-4 d-flex justify-content-center align items center"
+            data-aos="fade-down"
+            data-aos-duration="1500"
+          >
+            <div class="card" style="width: 18rem">
+              <img src="img/bag2.jpg" class="card-img-top" alt="women bag" />
+              <div class="card-body">
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card’s content.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-3 mb-4 d-flex justify-content-center align items center"
+            data-aos="fade-down"
+            data-aos-duration="1500"
+            data-aos-delay="1000"
+          >
+            <div class="card" style="width: 18rem">
+              <img
+                src="img/sunglass3.jpg"
+                class="card-img-top"
+                alt="women bag"
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card’s content.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-3 mb-4 d-flex justify-content-center align items center"
+            data-aos="fade-down"
+            data-aos-duration="1500"
+            data-aos-delay="2000"
+          >
+            <div class="card" style="width: 18rem">
+              <img src="img/cloth2.jpg" class="card-img-top" alt="women bag" />
+              <div class="card-body">
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card’s content.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-3 mb-4 d-flex justify-content-center align items center"
+            data-aos="fade-down"
+            data-aos-duration="1500"
+            data-aos-delay="3000"
+          >
+            <div class="card" style="width: 18rem">
+              <img src="img/sandel3.jpg" class="card-img-top" alt="women bag" />
+              <div class="card-body">
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card’s content.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-------------------------New - Arrivel - End-------------------------------------->
+
+    <!-------------------Map - Start----------------------------------------------->
+
+    <iframe
+      src="//maps.google.com/maps?q=53.3381768,-6.2613077&z=15&output=embed"
+      width="100%"
+      height="400vh"
+    >
+    </iframe>
+    <!---------------------MAp - End------------------------------------------------->
+
+    <!---------------------------Footer - Start----------------------------------------->
+
+    <footer class="container-fluid pt-5 pb-1">
+      <div class="row">
+        <div class="col-12 col-md">
+          <small class="d-block mb-3 text-body-light">© 2020–2025</small>
+          <h6>All rights reserved</h6>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Features</h5>
+          <ul class="list-unstyled text-small">
+            <li>
+              <a class="link-secondary text-decoration-none" href="#"
+                >Cool stuff</a
+              >
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none" href="#"
+                >Random feature</a
+              >
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none" href="#"
+                >Team feature</a
+              >
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none" href="#"
+                >Stuff for developers</a
+              >
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none" href="#"
+                >Another one</a
+              >
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none" href="#"
+                >Last time</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md">
+          <h5>Resources</h5>
+          <ul class="list-unstyled text-small">
+            <li>
+              <a class="link-secondary text-decoration-none" href="#"
+                >Resource name</a
+              >
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none" href="#"
+                >Resource</a
+              >
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none" href="#"
+                >Another resource</a
+              >
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none" href="#"
+                >Final resource</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md">
+          <h5>Resources</h5>
+          <ul class="list-unstyled text-small">
+            <li>
+              <a class="link-secondary text-decoration-none" href="#"
+                >Business</a
+              >
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none" href="#"
+                >Education</a
+              >
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none" href="#"
+                >Government</a
+              >
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none" href="#">Gaming</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md">
+          <h5>About</h5>
+          <ul class="list-unstyled text-small">
+            <li>
+              <a class="link-secondary text-decoration-none" href="#">Team</a>
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none" href="#"
+                >Locations</a
+              >
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none" href="#"
+                >Privacy</a
+              >
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none" href="#">Terms</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <div>
+        <h3 class="text-center mb-0 pb-0">
+          Pink <span class="change-Color">Petals</span>
+        </h3>
+      </div>
+    </footer>
+
+    <!---------------------Footer - End----------------------------------------------->
+
+    <!----------------------Bootstrap-Js-CDN--------------------------------------------->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-----------------------------jquery - js - CDN-------------------------------------->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!---------------------------OWl - js - CDN-------------------------------------------->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!--------------------------AOS - Js - CDN-------------------------------------->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+
+    <!-----------------------Owl - js------------------------------->
+
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        center:true,
+        nav: false,
+        autoplay: true,
+        autoplayTimeout: 3000,
+
+        responsive: {
+          0: {
+            items: 1,
+            stagePadding:5
+          },
+          600: {
+            items: 3,
+          },
+          1000: {
+            items: 4,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

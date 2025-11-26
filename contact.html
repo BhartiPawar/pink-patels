@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pink Petals</title>
+<!----------------------Favicon - Link---------------------------------->
+    <link rel="icon" type="image/x-icon" href="img/favicon-16x16.png">
+    
+<!----------------------Bootstrap - CDN----------------------------------------------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+<!----------------------Owl - CDN----------------------------------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!----------------------Font - Awasome - CDN---------------------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!----------------------------AOS - CDN----------------------------------->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<!----------------------Custom - CSS----------------------------------------------->
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body class="bg-black text-light">
+
+<!-------------------------Header-Start--------------------------------------------->
+
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand text-dark fw-semibold" href="#">Pink<span class=" change-Color">Petals</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Categories
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="shoe.html">Shoes</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                   <li><a class="dropdown-item" href="perfume.html">Perfume</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Sunglasses</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <!-- <li><a class="dropdown-item" href="#">Heels</a></li>
+                  <li><hr class="dropdown-divider"></li> -->
+                 
+                  <li><a class="dropdown-item" href="#">Bags</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contact.html">Contact Us</a>
+              </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2 border-black" type="search" placeholder="Search" aria-label="Search"/>
+            <button class="btn btn-outline-dark" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    </header>
+<!-------------------------Header-End--------------------------------------------->
+
+<!-------------------------Form - Start----------------------------------------------->
+
+    <div class="modal modal-sheet position-static d-block" tabindex="-1" role="dialog" id="modalSignin"> 
+        <div class="modal-dialog"> 
+            <div class="modal-content rounded-4 shadow"> 
+                <div class="modal-header p-5 pb-4 border-bottom-0"> 
+                    <h1 class="fw-bold mb-0 fs-2">Sign up</h1> 
+                </div> 
+                <div class="modal-body p-5 pt-0"> 
+                    <form class=""> 
+                        <div class="form-floating mb-3"> 
+                            <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com"> 
+                            <label for="floatingInput">Email address</label> 
+                        </div> 
+                        <div class="form-floating mb-3"> 
+                            <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password"> 
+                            <label for="floatingPassword">Password</label> 
+                        </div> 
+                        <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary addToCart" type="submit">Sign up</button> 
+                        <small class="text-body-secondary">By clicking Sign up, you agree to the terms of use.</small> 
+                        <hr class="my-4"> 
+                        <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2> 
+                        <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit"> 
+                            <svg class="bi me-1" width="16" height="16" aria-hidden="true">
+                                <use xlink:href="#google"></use>
+                            </svg>
+                            Sign up with Google
+                        </button> 
+                        <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3 " type="submit"> 
+                            <svg class="bi me-1" width="16" height="16" aria-hidden="true">
+                                <use xlink:href="#facebook"></use>
+                            </svg>
+                            Sign up with Facebook
+                        </button> 
+                        <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit"> 
+                            <svg class="bi me-1" width="16" height="16" aria-hidden="true">
+                                <use xlink:href="#github"></use>
+                            </svg>
+                            Sign up with Email
+                        </button> 
+                    </form> 
+                </div> 
+            </div> 
+        </div> 
+    </div>
+
+<!-------------------------Form - End----------------------------------------------->
+
+<!---------------------------Footer - Start----------------------------------------->
+
+<footer class="container-fluid pt-5 pb-1"> 
+  <div class="row"> 
+    <div class="col-12 col-md"> 
+        <small class="d-block mb-3 text-body-light">© 2020–2025</small> 
+        <h6>All rights reserved</h6>
+    </div>
+        <div class="col-6 col-md"> 
+          <h5>Features</h5> 
+          <ul class="list-unstyled text-small"> 
+            <li>
+              <a class="link-secondary text-decoration-none" href="#">Cool stuff</a>
+            </li> 
+            <li>
+              <a class="link-secondary text-decoration-none" href="#">Random feature</a>
+            </li> 
+            <li>
+              <a class="link-secondary text-decoration-none" href="#">Team feature</a>
+            </li> 
+            <li>
+              <a class="link-secondary text-decoration-none" href="#">Stuff for developers</a>
+            </li> 
+            <li>
+              <a class="link-secondary text-decoration-none" href="#">Another one</a>
+            </li> 
+            <li>
+              <a class="link-secondary text-decoration-none" href="#">Last time</a>
+            </li> 
+          </ul> 
+        </div> 
+
+        <div class="col-6 col-md"> 
+          <h5>Resources</h5> 
+          <ul class="list-unstyled text-small"> 
+            <li>
+              <a class="link-secondary text-decoration-none" href="#">Resource name</a>
+            </li> 
+            <li>
+              <a class="link-secondary text-decoration-none" href="#">Resource</a>
+            </li> 
+            <li>
+              <a class="link-secondary text-decoration-none" href="#">Another resource</a>
+            </li> 
+            <li>
+              <a class="link-secondary text-decoration-none" href="#">Final resource</a>
+            </li> 
+          </ul> 
+        </div> 
+
+        <div class="col-6 col-md"> 
+          <h5>Resources</h5>
+          <ul class="list-unstyled text-small"> 
+            <li>
+              <a class="link-secondary text-decoration-none" href="#">Business</a>
+            </li> 
+            <li>
+              <a class="link-secondary text-decoration-none" href="#">Education</a>
+            </li> 
+            <li>
+              <a class="link-secondary text-decoration-none" href="#">Government</a>
+            </li> 
+            <li>
+              <a class="link-secondary text-decoration-none" href="#">Gaming</a>
+            </li> 
+          </ul> 
+        </div> 
+
+        <div class="col-6 col-md"> 
+          <h5>About</h5> 
+          <ul class="list-unstyled text-small"> 
+            <li>
+              <a class="link-secondary text-decoration-none" href="#">Team</a>
+            </li> 
+            <li>
+              <a class="link-secondary text-decoration-none" href="#">Locations</a>
+            </li> 
+            <li>
+              <a class="link-secondary text-decoration-none" href="#">Privacy</a>
+            </li> 
+            <li>
+              <a class="link-secondary text-decoration-none" href="#">Terms</a>
+            </li> 
+          </ul> 
+        </div> 
+      </div> 
+      <hr>
+      <div>
+        <h3 class="text-center mb-0 pb-0">Pink <span class="change-Color">Petals</span></h3>
+      </div>
+    </footer>
+
+<!---------------------Footer - End----------------------------------------------->
+
+
+
+<!----------------------Bootstrap-Js-CDN--------------------------------------------->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+ 
+    </body>
+    </html>

@@ -1,0 +1,76 @@
+.container-fluid .change-Color {
+    color: rgb(248, 69, 152);
+}
+
+section {
+    margin: 10vh 0;
+}
+
+.about .banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 23, 0.05)) ,url(../img/discoount.jpg) no-repeat center fixed;
+    background-size: cover;
+    height: 50vh;
+}
+
+.btn-outline-dark:hover {
+    background-color: rgb(248, 69, 152);
+    border-color: rgb(248, 69, 152);
+}
+
+.card .btn-primary {
+    transform: translateX(2.5rem);
+    opacity: 0;
+    transition: 0.5s all ease-in-out;
+}
+
+.card:hover .btn-primary {
+    transform: translateX(0);
+    opacity: 1;
+} 
+
+ .img-wrapper {
+    overflow: hidden;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+ }
+
+ .makeupCart img {
+    transition: 0.5s all ease-in-out;
+ }
+
+.makeupCart:hover img {
+    scale: 1.1;
+}
+
+body , html{
+    overflow-x: hidden !important;
+    margin: 0 !important;
+    padding: 0 !important;
+} 
+
+.addToCart {
+     background-color: rgb(248, 69, 152);
+    border-color: rgb(248, 69, 152);
+}
+
+.addToCart:hover {
+     background-color: rgb(248, 69, 152);
+    border-color: rgb(248, 69, 152);
+}
+
+.fa-heart:hover {
+    color: rgb(248, 69, 152);
+}
+
+.linkColor {
+    color: rgb(248, 69, 152);
+}
+
+.dropdown-item:hover {
+    background-color: rgb(248, 69, 152) !important;
+    color: white !important;
+}
+
+.btn-outline-secondary {
+    color: rgb(248, 69, 152) !important;
+}
